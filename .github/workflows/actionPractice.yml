@@ -24,6 +24,10 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v3
+      
+      # Output an output message
+      - name: Output a message
+        run: echo "Action Complete!"
 
       # Runs a single command using the runners shell
       - name: Start workflow message
